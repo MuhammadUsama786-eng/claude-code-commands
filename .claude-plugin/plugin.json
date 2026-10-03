@@ -1,0 +1,11 @@
+{
+  "name": "production-commands",
+  "displayName": "Production Engineering Commands",
+  "version": "1.0.0",
+  "description": "Two commands from a real production codebase: /babysit diagnoses CI failures from the job logs; /review-pr is a severity-tiered review where every finding is proven against the code.",
+  "author": { "name": "Muhammad Usama", "url": "https://github.com/MuhammadUsama786-eng" },
+  "homepage": "https://github.com/MuhammadUsama786-eng/claude-code-commands",
+  "repository": "https://github.com/MuhammadUsama786-eng/claude-code-commands",
+  "license": "MIT",
+  "keywords": ["code-review", "ci", "github", "pull-requests", "debugging"]
+}

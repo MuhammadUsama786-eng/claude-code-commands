@@ -5,12 +5,23 @@ Two slash commands I use every day on a large production codebase. They make Cla
 - **`/babysit <PR>`** — watches a PR's CI, and when a check fails it reads the job log and tells you the *exact* cause (`file:line`, the missing coverage line, the failing assertion) plus the fix. No "probably flaky, re-run".
 - **`/review-pr <PR> [--post]`** — a Principal-Engineer-level review where **every finding must be proven** against the code (a concrete failing input → wrong output) before it's reported. Severity-tiered: 🔴 Blocking · 🟠 Should-fix · 🟡 Nit.
 
-## Install (30 seconds)
-```bash
-mkdir -p ~/.claude/commands
-cp commands/*.md ~/.claude/commands/
+## Install
+
+**As a plugin (recommended, one line inside Claude Code):**
 ```
-Then in Claude Code: `/babysit 123` or `/review-pr 123`. Needs the GitHub CLI (`gh auth login`).
+/plugin install production-commands --marketplace MuhammadUsama786-eng/claude-code-commands
+```
+Or from your shell:
+```bash
+claude plugin marketplace add MuhammadUsama786-eng/claude-code-commands
+claude plugin install production-commands@usama-tools
+```
+
+**Or copy the files:**
+```bash
+mkdir -p ~/.claude/commands && cp commands/*.md ~/.claude/commands/
+```
+Then: `/babysit 123` or `/review-pr 123`. Needs the GitHub CLI (`gh auth login`).
 
 Tip: edit the `Customize` comment at the bottom of each file and name your repo's real CI gates. Specific beats generic.
 

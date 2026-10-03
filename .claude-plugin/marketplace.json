@@ -1,0 +1,14 @@
+{
+  "name": "usama-tools",
+  "owner": {
+    "name": "Muhammad Usama"
+  },
+  "description": "Production-grade Claude Code commands by Muhammad Usama",
+  "plugins": [
+    {
+      "name": "production-commands",
+      "source": "./",
+      "description": "/babysit + /review-pr for real production repos"
+    }
+  ]
+}
