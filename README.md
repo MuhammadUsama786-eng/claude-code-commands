@@ -22,6 +22,6 @@ The **Production AI Engineering Kit** adds:
 - **PR review-comment bot** — an hourly cloud agent that fixes, explains or flags review comments on your PRs (with a token diet that cut empty runs from ~30 agent turns to 4)
 - **The Playbook** — real case studies: what the agents got wrong, and the exact fixes
 
-👉 <GUMROAD_PRO_LINK>
+👉 https://usamanaseer.gumroad.com/l/ai-engineering-kit
 
 MIT licensed. Built by Muhammad Usama.
